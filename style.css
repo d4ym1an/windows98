@@ -1,6 +1,10 @@
 @import url('/Fonts/forza.css');
 @import url('/Fonts/levi.css');
 
+*{
+    cursor: url('/Icons/Cursor79.png'), auto;
+}
+
 body {
     font-family: 'windowsregular', sans-serif;
     background-color: #008080;
