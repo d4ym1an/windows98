@@ -3,23 +3,102 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="Icons/globe.png" type="image/x-icon">
     <title>404 Not Found</title>
+    
     <style>
+        @import url('/Fonts/levi.css');
         body {
-            font-family: Arial, sans-serif;
-            text-align: center;
+            font-family: 'windowsregular';
             padding: 50px;
+            background-color: #0804ac;
+            color: white;
+            padding: 20em;
+            word-spacing: 0.5em; 
+            /* Add responsive padding */
+            padding: 5em 1em;
         }
-        h1 {
-            font-size: 50px;
+
+        ::selection{
+            color: black;
+            background-color: white;
         }
-        p {
+
+        .header::selection{
+            background-color: #0804ac;
+            color: antiquewhite;
+        }
+
+        .header-container {
+            text-align: center;
+        }
+
+        .header {
+            font-size: 30px;
+            background-color: antiquewhite;
+            color: #0804ac;
+            text-align: center;
+            display: inline-block;
+            padding: 0 10px;
+        }
+        h2 {
             font-size: 20px;
+            font-weight: 300;
+        }
+
+        a{
+            color: white;
+        }
+
+        h2 a:hover{
+            background-color: white;
+            color: black;
+        }
+
+        .key{
+            text-align: center;
+        }
+
+        .blinking-underline {
+            display: inline-block;
+            width: 10px;
+            height: 1em;
+            background-color: white;
+            animation: blink 1s infinite;
+        }
+
+        .text{
+            margin-left: 18em;
+            margin-left: 0;
+        }
+
+        @keyframes blink {
+            0%, 50% {
+                opacity: 1;
+            }
+            50.01%, 100% {
+                opacity: 0;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>404</h1>
-    <p>Page Not Found</p>
+    <div class="header-container">
+        <h2 class="header">d4ym1an.exe</h2>
+    </div>
+    <div class="text">
+    <h2>An error has occurred. To continue:</h2><br>
+    <h2><a href="index.html">Click Here</a> to return to <strong>d4ym1an.exe</strong></h2>
+    <h2>Error: 0E : 016F : BFF9B3D4</h2>
+</div>
+    <h2 class="key">Press any key to get continue<span class="blinking-underline"></span></h2>
 </body>
+<script>
+    document.addEventListener('keydown', function() {
+        window.location.href = 'index.html';
+    });
+    document.addEventListener('touchstart', function() {
+        window.location.href = 'index.html';
+    });
+</script>
 </html>

@@ -70,8 +70,8 @@ a {
     position: absolute;
     bottom: 30px;
     left: 30px;
-    width: 200px;
-    height: 200px;
+    width: 150px; /* Adjusted size */
+    height: 150px; /* Adjusted size */
     border-radius: 50%;
     overflow: hidden;
     border: 3px solid white;
@@ -160,10 +160,8 @@ ul li a:active {
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
-    width: 200px;
-    position: absolute;
-    top: 50px;
-    right: 15%;
+    width: 100%; /* Adjusted width */
+    justify-content: center; /* Center the icons */
 }
 .profile-icon {
     display: flex;
@@ -202,15 +200,15 @@ ul li a:active {
     .profile-pic {
         bottom: 20px;
         left: 20px;
-        width: 40%;
-        height: 40%;
+        width: 30%; /* Adjusted size */
+        height: 30%; /* Adjusted size */
     }
     .content .profile-pic {
         position: absolute;
         bottom: 30px;
         left: 30px;
-        width: 100px;
-        height: 100px ;
+        width: 80px; /* Adjusted size */
+        height: 80px; /* Adjusted size */
         border-radius: 50%;
         overflow: hidden;
         border: 3px solid white;
@@ -222,5 +220,73 @@ ul li a:active {
         position: static;
         flex-direction: row;
         justify-content: center;
+    }
+}
+@media (max-width: 480px) {
+    .window {
+        width: 100%;
+        margin: 20px auto;
+    }
+    .window2 {
+        width: 80%;
+        left: 50%;
+    }
+    .title-bar {
+        font-size: 12px;
+    }
+    .title-bar .x-button {
+        width: 12px;
+        height: 12px;
+    }
+    .content {
+        padding: 0.5em;
+    }
+    .content .banner-img {
+        width: 100%;
+    }
+    .content .profile-pic {
+        width: 60px; /* Adjusted size */
+        height: 60px; /* Adjusted size */
+        bottom: 10px;
+        left: 10px;
+    }
+    .taskbar {
+        height: 30px;
+        padding: 0 5px;
+    }
+    button {
+        padding: 3px 5px;
+    }
+    .desktop-icons {
+        width: 100%;
+        padding: 5px;
+    }
+    .desktop-icon {
+        width: 50px;
+        margin: 5px;
+    }
+    .desktop-icon img {
+        width: 40px;
+        height: 40px;
+    }
+    .desktop-icon span {
+        font-size: 10px;
+
+    }
+    .profile-icons {
+        width: 100%;
+        padding: 5px;
+        justify-content: center; /* Center the icons */
+    }
+    .profile-icon {
+        width: 50px;
+        margin: 5px;
+    }
+    .profile-icon img {
+        width: 40px;
+        height: 40px;
+    }
+    .profile-icon span {
+        font-size: 10px;
     }
 }
