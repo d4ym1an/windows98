@@ -4,6 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="d4ym1an, also known as daymian, is a YouTube content creator specializing in Kirka.io, an FPS browser game.">
+    <meta name="keywords" content="d4ym1an, daymian, Kirka.io, FPS game, YouTube content creator, browser game">
+    <meta name="author" content="d4ym1an">
     <link rel="icon" href="Icons/globe.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <title>d4ym1an</title>
@@ -11,71 +14,70 @@
 
 <body>
     <noscript>ALLOW SCRIPTS</noscript>
-    <div class="parent">
-        <div class="window">
-            <div class="title-bar">
-                <span>d4ym1an</span>
-                <span class="x-button">X</span>
-            </div>
-            <div class="content">
-                <h1>Howdy User!</h1>
+    <main class="parent">
+        <section class="window" aria-label="Main Window">
+            <header class="title-bar">
+                <h1>d4ym1an</h1>
+                <button class="x-button" aria-label="Close Window">X</button>
+            </header>
+            <article class="content">
+                <h2>Howdy User!</h2>
                 <div class="profile"></div>
-                <div class="banner">
-                    <img src="banner.jpg" alt="Banner Image" class="banner-img">
-                </div>
-                <div class="profile-pic">
-                    <img src="profile.jpg" alt="Profile Picture" class="profile-img">
-                </div>
-            </div>
-            <div class="taskbar">
-                <button>Start</button>
-            </div>
-        </div>
-        <div class="desktop-icons">
+                <figure class="banner">
+                    <img src="banner.jpg" alt="A banner showcasing d4ym1an's content" class="banner-img">
+                </figure>
+                <figure class="profile-pic">
+                    <img src="profile.jpg" alt="Profile picture of d4ym1an" class="profile-img">
+                </figure>
+            </article>
+            <footer class="taskbar">
+                <button aria-label="Open Start Menu">Start</button>
+            </footer>
+        </section>
+        <nav class="desktop-icons" aria-label="Desktop Icons">
             <div class="desktop-icon">
-                <a href="https://www.youtube.com/@d4ym1an">
-                    <img src="Icons/youtube.png" alt="My Youtube">
+                <a href="https://www.youtube.com/@d4ym1an" aria-label="Visit my YouTube channel">
+                    <img src="Icons/youtube.png" alt="YouTube icon">
                     <span>YouTube</span>
                 </a>
             </div>
 
             <div class="desktop-icon">
-                <a href="https://www.twitch.tv/d4ym1an">
-                    <img src="Icons/twitch.jpg" alt="My Twitch" style="border-radius: 1em;">
+                <a href="https://www.twitch.tv/d4ym1an" aria-label="Visit my Twitch channel">
+                    <img src="Icons/twitch.jpg" alt="Twitch icon" style="border-radius: 1em;">
                     <span>Twitch</span>
                 </a>
             </div>
 
             <div class="desktop-icon">
-                <a href="https://discord.com/invite/3b38FeDSnh">
-                    <img src="Icons/discord.png" alt="My Discord">
+                <a href="https://discord.com/invite/3b38FeDSnh" aria-label="Join my Discord server">
+                    <img src="Icons/discord.png" alt="Discord icon">
                     <span>Discord</span>
                 </a>
             </div>
 
             <div class="desktop-icon">
-                <a href="flow/index.html">
-                    <img src="Icons/flow.jpg" alt="My Discord" style="border-radius: 1em;">
+                <a href="flow/index.html" aria-label="Visit my Flow page">
+                    <img src="Icons/flow.jpg" alt="Flow icon" style="border-radius: 1em;">
                     <span>Flow</span>
                 </a>
             </div>
 
             <div class="desktop-icon">
-                <a href="portfolio.html">
-                    <img src="Icons/briefcase.png" alt="My Portfolio">
+                <a href="portfolio.html" aria-label="View my portfolio">
+                    <img src="Icons/briefcase.png" alt="Portfolio icon">
                     <span>Portfolio</span>
                 </a>
             </div>
                         
             <div class="desktop-icon">
-                <a href="mailto:buisness@daymian.xyz" target="_blank">
-                    <img src="Icons/mail.webp" alt="My Email!">
+                <a href="mailto:buisness@daymian.xyz" target="_blank" aria-label="Send me an email">
+                    <img src="Icons/mail.webp" alt="Email icon">
                     <span>Business Email</span>
                 </a>
             </div>
-
-        </div>
-    </div>
+        </nav>
+    </main>
     <script src="/scripts/script.js"></script>
 </body>
 
