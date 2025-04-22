@@ -1,0 +1,148 @@
+:root {
+  --color1: {color1};
+  --color2: {color2};
+  --color3: {color3};
+  --color4: {color4};
+  
+  --logoWidth: {logoWidth}%;
+}
+body {
+  overflow: hidden;
+  text-align: center;
+}
+
+body,
+html {
+ height: 100%;
+ width: 100%;
+ margin: 0;
+ padding: 0;
+}
+
+#widgetHolder {
+  width: auto;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  visibility: hidden;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  aspect-ratio: 16 / 9;
+}
+
+#scenes {
+  position: absolute;
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+#sceneOne, #sceneTwo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#sceneOne {
+  background: #344256 ;
+}
+
+#sceneTwo {
+  background: #909AA8;
+}
+
+#scenes svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 50%;
+  fill:#B3BDCB;
+}
+
+#animationWindow {
+ position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+/* 
+========================
+========================
+Custom Widget Start
+========================
+========================
+*/
+
+.color1 {
+  fill: var(--color1);
+}
+
+.color2 {
+  fill: var(--color2);
+}
+
+.color3 {
+  fill: var(--color3);
+}
+
+.color4 {
+  fill: var(--color4);
+}
+
+.shadow {
+  fill: var(--shadow);
+}
+
+#transition {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Flipping CSS */
+
+.flipX {
+  transform: scale(-1, 1);
+}
+
+.flipY {
+  transform: scale(1, -1);
+}
+
+.flipBoth {
+  transform: scale(-1, -1);
+}
+/* End Flipping CSS */
+
+/* Logo CSS */
+
+#logo {
+  width: var(--logoWidth);
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hideLogo {
+  display: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+/* Logo CSS */
