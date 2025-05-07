@@ -25,7 +25,7 @@ header {
 }
 
 header h1 {
-    font-size: 24px;
+    font-size: 50px;
     margin-bottom: 5px;
 }
 
@@ -50,18 +50,23 @@ section h2 {
     margin-bottom: 10px;
 }
 
-.social-icon, .contact-icon {
+.social-icon, .contact-icon, .website-icon {
     display: flex;
-    align-items: center;
+    align-items: center;;
     margin-bottom: 10px;
 }
 
-social-icon img, .contact-icon img {
-    width: 32px;
-    height: 32px;
+.social-icon img, .contact-icon img, .website-icon img {
+    width: 48px;
+    height: 48px; 
     margin-right: 10px;
     border: 2px solid #808080;
     box-shadow: inset -2px -2px 0 #ffffff, inset 2px 2px 0 #000000;
+}
+
+.social-icon a, .contact-icon a, .website-icon a {
+    display: flex;
+    align-items: center;
 }
 
 a {
@@ -83,3 +88,72 @@ footer {
     font-size: 12px;
 }
 
+/* .taskbar-button is generally .task or .start-button for now */
+.taskbar button,
+.taskbar-divider,
+.tray {
+	margin: 2px;
+}
+.taskbar-divider {
+	margin-right: 0px;
+	margin-left: 0px;
+	/* TODO: maybe make that 2px rule padding on the taskbar instead and avoid resetting this */
+}
+.taskbar button {
+	line-height: 14px;
+	padding: 2px;
+	overflow: hidden; /* TODO: If tons and tons of tasks don't show icons? (smaller than width of an icon?) */
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	/* (justify-content: flex-start;) */
+}
+.taskbar button .title {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+.taskbar .start-button {
+	flex-shrink: 0;
+	padding: 2px 4px;
+}
+.tray {
+	display: flex;
+	flex-direction: row;
+	line-height: 22px;
+	box-sizing: border-box;
+	vertical-align: middle;
+}
+.tray-icons {
+	display: flex;
+	align-items: center;
+	margin-left: 2px; /* XXX basically 1px, but 2px because of the way the border is done */
+}
+.tray-icon {
+	margin-left: 1px;
+}
+.taskbar-time {
+	width: 60px;
+	text-align: center;
+}
+
+.taskbar {
+	outline: 1px solid var(--ButtonLight);
+	border-top: 1px solid var(--ButtonHilight);
+	background: var(--ButtonFace);
+	color: var(--ButtonText);
+}
+.taskbar-divider {
+	border-left: 1px solid var(--ButtonShadow);
+	border-right: 1px solid var(--ButtonHilight);
+}
+.taskbar-time {
+	font-family: sans-serif;
+	font-family: "MS Sans Serif", "Segoe UI", sans-serif;
+	font-size: 12px;
+}
+
+.social-media h2, .business-contact h2, .projects h2{
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
