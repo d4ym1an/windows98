@@ -12,8 +12,39 @@ body {
     font-family: 'windowsregular', sans-serif;
     background-color: #008080; /* Classic teal background */
     color: black;
-    margin: 0;
-    padding: 0;
+    margin: 1em;
+    padding: 3em;
+}
+
+/* Custom Windows 98 style scrollbar */
+::-webkit-scrollbar {
+    width: 18px;
+    background: #c0c0c0;
+    border-left: 2px solid #808080;
+    border-right: 2px solid #ffffff;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #e0e0e0;
+    border: 2px solid #808080;
+    box-shadow: inset -2px -2px 0 #ffffff, inset 2px 2px 0 #000000;
+    border-radius: 0;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #b0b0b0;
+}
+
+::-webkit-scrollbar-corner {
+    background: #c0c0c0;
+    border-top: 2px solid #808080;
+    border-left: 2px solid #ffffff;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #000000 #c0c0c0;
 }
 
 header {
