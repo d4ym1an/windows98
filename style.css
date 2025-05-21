@@ -7,10 +7,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+::selection {
+    font-size: 14px;
+    background-color: #008080;
+    color: black;
+}
 
 body {
     font-family: 'windowsregular', sans-serif;
-    background-color: #008080; /* Classic teal background */
+    background-color: #008080;
     color: black;
     margin: 1em;
     padding: 3em;
@@ -83,8 +88,8 @@ section h2 {
 
 .social-icon, .contact-icon, .website-icon {
     display: flex;
-    align-items: center;;
-    margin-bottom: 10px;
+    align-items: center;
+    margin-bottom: 5px;
 }
 
 .social-icon img, .contact-icon img, .website-icon img {
@@ -187,4 +192,12 @@ footer {
 .social-media h2, .business-contact h2, .projects h2{
     font-size: 1.5em;
     margin-bottom: 10px;
+}
+
+.website-icons-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    justify-items: flex-start;
+    align-items: center;
 }
